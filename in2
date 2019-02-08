@@ -1,0 +1,9 @@
+class Rectangle {
+    int width, height;
+  public:
+    Rectangle();
+    Rectangle (int w,int h);
+    int area (void);
+    void draw(int x, int y, int w, int h);
+    void draw(float x, float y, float w, float h);
+};

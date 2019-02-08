@@ -1,0 +1,9 @@
+class Line {
+  public:
+    int getLength( void );
+    Line( int len ); //constructor
+    Line( const Line &obj); // constructor copiere
+    ~Line(); // destructor
+  private:
+    int *ptr;
+};

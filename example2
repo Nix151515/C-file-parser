@@ -1,0 +1,41 @@
+class Number{
+  private:
+    int number;
+  public:
+    Number(int n);
+    int getNumber(); 
+    void setNumber(signed long int nr);
+    bool isInteger(double a);
+    int isInteger(int a);
+    Number add(int b);
+    double divide(int nr);
+    double add(double b);
+    Number(const Number &obj);
+  
+};
+
+class Point{
+  private:
+    int x,y;
+  public:
+    Number(int n);
+    int getX(); 
+    void setX(unsigned long int nr);
+    int getY(void); 
+    void setY(signed short int nr);
+    ~Point();
+
+};
+
+class Time
+{
+  private :
+    int hour;
+    int minute;
+    int second;
+  public :
+    Time(int h, int m ,int s);
+    void setTime(const int h, const int m, const int s);
+    void print();
+    void setTime(float h, float m);
+};

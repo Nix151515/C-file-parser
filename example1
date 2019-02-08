@@ -1,0 +1,39 @@
+class Game {
+//Declarations
+    int width[8], *height;
+  public:
+    Game();   // constructor
+    Game(int name);
+    // Game(float addLevel);
+    Game(int name, float levels);
+    unsigned short int getPlayers();
+    Level getLevel ();
+    int getLevel (float);
+    int arena (void);
+    int hero(char name[], char *champion, float type, int *spells[50]);
+    int hero(float health, float mana[10]);
+    float getLevel( void );
+    signed long setPlayer(char *x);
+    Level getLevel(Arena a);
+    unsigned int pixels(int x,int y);
+    Game(const Game &obj);
+    ~Game();
+  private:
+    int length;
+    char* k[4];
+};
+
+class Level {
+  public:
+    void setName(char* len );
+    double getName(void );
+    int setPlayers(int a);
+    Level(); // constructor
+    //Level(double l);
+    ~Level();
+    char* setName(char len[10]);
+  private:
+    double len;
+};
+
+
